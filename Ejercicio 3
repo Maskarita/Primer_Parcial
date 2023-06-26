@@ -1,0 +1,17 @@
+# Actividad 3
+""""Escribe un programa que calcule la equivalencia a pesos de los dólares ingresados por pantalla. El
+programa debe preguntar el tipo de cambio a convertir (es decir, cuánto cotiza el dólar)."""
+Caja = int(input("¿A qué desea convertir?: 1 Peso / 2 Dolar: " ))
+if Caja < 2 and Caja > 0:
+    Dolar = int(input("Ingrese la cantidad de dólares: "))
+    Peso = Dolar * 495
+    print(F"Usted a retirado {Peso} pesos")
+elif Caja > 1 and Caja < 3:
+    Peso = int(input("Ingrese la catidad de pesos: "))
+    Dolar = Peso // 495
+    print(F"Usted a retirado {Dolar} dólares")
+else:
+    print("El carater ingresado no es válido")
+""""Utlilicé los condicionales if, elif y else, si el usuario ingresa el numeroo 1 el programa va a redirijir la operacion a un if, 
+si ingresa el numero 2 lo redirije a un elif y si ingresa cualquier numero que no sea uno de esos dos lo llevará a un else, al cual 
+lo definí con un print que diga que se a producido un error """

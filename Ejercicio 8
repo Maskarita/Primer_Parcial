@@ -1,0 +1,12 @@
+# Actividad 8: 
+"""Escribe un programa solicite y muestre por pantalla el nombre, apellido y edad de 5 personas."""
+Rep = 0
+while Rep < 5:
+    Persona = input("Escribe tu nombre: ")
+    Apellido = input("Escribe tu apellido: ")
+    Edad = input("Escribe tu edad: ")
+    print(Persona, Apellido, Edad, "años")
+    Rep = Rep + 1
+""""Comencé a utilizar el dato interactivo while que va a realizar una lista mientras se cumpla una condición, 
+es este caso datos de usuario que nos supere la cantidad de 5 personas, a la variable Rep le di el valor de 0 porque 
+a partir de acá se va a partir la lista. Dentro del while hay una variable Rep = Rep + 1 que es un contador"""

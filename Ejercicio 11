@@ -1,0 +1,24 @@
+# Actividad 11:
+""""Escribe un programa que muestre los números del 1 al 10. Además, el programa debe mostrar:
+a. Si es número es par o impar.
+b. Cuanto es la suma total de todos los números mostrados.
+c. Cuanto es la suma total de todos los números pares mostrados.
+d. Cuanto es la suma total de todos los números impares mostrados."""
+Numero = 1
+par = 0
+impar = 0
+suma = 0
+while Numero <= 10:
+    suma = suma + Numero
+    if Numero % 2 != 0:
+        impar = impar + Numero        
+        print(Numero, "Es impar")
+    elif Numero % 2 == 0:
+        par = par + Numero
+        print(Numero, "Es par")
+    Numero = Numero + 1
+print(F"La suma de los numeros impares es {impar}")
+print(F"La suma de los numeros pares es {par}")
+print(F"La suma de los numeros es {suma}")
+"""Aquí utilicé los condicionales para definir los numeros pares e impares con el modulo % siendo que 2 es
+diferente de 0"""

@@ -1,0 +1,16 @@
+# Actividad 10:
+""""Escribe un programa que calcule el promedio general de una clase."""
+Alumnos = int(input("Ingrese la cantidad de alumnos: "))
+Rep = 1
+Nota = 0
+while Rep <= Alumnos:
+    NomdeAlum = input("Ingrese el nombre y apellido del alumno: ") 
+    Notas = int(input("Ingrese la nota del alumno: "))
+    print(F"La nota de {NomdeAlum} es {Notas}")
+    Nota = Nota + Notas
+    Rep = Rep + 1
+Promedio = Nota // Alumnos
+print("La nota total de la clase es", Nota)
+print("El promedio de la clase es", Promedio)
+""""Para este problema solicité al usuiario que ingrese la cantidad de alumnos de su clase, esa cantidad que el usuario ingrese 
+va a dividir el total de las notas sumadas en total de la clase """

@@ -1,0 +1,10 @@
+# Actividad 1:
+""""Escribe un programa que calcule la edad que cumplió o debe cumplir este año la persona, basado en el
+año de nacimiento."""
+Nacimiento = int(input("Ingrese su año de nacimiento: "))
+Dia = int(input("Ingrese su dia de nacimiento: "))
+Mes = (input("Ingrese su mes de nacimiento: "))
+Actual = int(input("Ingrese el año actual "))
+""""Definí estas variables para hacer el mas exacto su fecha de nacimiento"""
+Edad = Actual - Nacimiento 
+print("En", Mes, Dia, "del", Actual, "usted tendra", Edad, "años")

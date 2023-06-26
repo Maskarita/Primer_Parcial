@@ -1,0 +1,14 @@
+# Actividad 9
+""""Escribe un programa que solicite y muestre por pantalla nombre, apellido y edad de una cantidad de
+personas ingresada por el usuario."""
+PersonasIng = int(input("Ingrese la cantidad de personas que desea ingresar al sistema: "))
+Rep = 0
+while Rep < PersonasIng:
+    Persona = input("Escribe tu nombre: ")
+    Apellido = input("Escribe tu apellido: ")
+    Edad = input("Escribe tu edad: ")
+    print(Persona, Apellido, Edad, "años")
+    Rep = Rep + 1
+"""Vuelvo a utilizar el interactivo while, pero esta vez definí la variable PersonasIng, el cual va a solicitar 
+al usuario la cantidad de personas que quiere ingresar al sistema y en la estructura del while se remplaza el dato numérico
+por la variable mencionada"""

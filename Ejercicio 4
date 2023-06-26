@@ -1,0 +1,18 @@
+# Actividad 5: 
+"""Escribe un programa que calcule el promedio final de una materia, basado en 3 notas de parciales,
+indicando por pantalla si el alumno aprobó o debe recursar la materia (se aprueba con 6)."""
+Nota1 = int(input("Ingresa el valor de tu primera nota del parcial: "))
+Nota2 = int(input("Ingresa el valor de tu primera nota del parcial: "))
+Nota3 = int(input("Ingresa el valor de tu primera nota del parcial: "))
+Promedio = (Nota1 + Nota2 + Nota3) // 3
+if Promedio >= 6 and Promedio <= 10:
+    print(F"Usted aprobó con un {Promedio}")
+elif Promedio <= 5 and Promedio >= 0:
+    print(F"Usted desaaprobó con un {Promedio}")
+else:
+    print("Se a producido un error al ingresar sus notas, verifíque que las haya colocado corretamente")
+""""Nuevamente utilicé los condicionales pero agregué un operador lógico and, el cúal va a tomar en cuenta 
+el condicional que cumpla con ambas condicionenes impuestas, en este caso si el promedio es mayor o igual a 6
+el alumno estará aprobado, pero si es menor o igual a 5 está desaprobado, y tambien agregué una última condición
+la cual dice que si el promedio lanza un numero que no esté entre el 0 y el 10 pida al usuario que verifíque que 
+las notas ingresadas esten bien puestas"""

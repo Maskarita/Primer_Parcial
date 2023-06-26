@@ -1,0 +1,16 @@
+# Actividad 12: 
+""""Escribe un programa que permita ingresar las edades de las personas, hasta que el usuario decida no
+hacerlo más, y muestre, al final, un promedio de las edades ingresadas y el total de personas ingresadas."""
+personas = 1
+edad = 1
+continuar = 1
+while continuar != 0:
+    usuario = input("Ingrese el nombre de la persona: ")
+    años = int(input("Ingrese la edad de la persona: "))
+    continuar = int(input(F"¿Desea continuar? Ingrese |1|  para continuar o ingrese |0| para finalizar: "))
+    personas = personas + 1
+    edad = edad + 1
+    print (F"su nombre es {usuario} y tiene es {años} años")
+""""Al interactivo while le agregué la variable continuar, la cual dice que si 1 no es igual a 0
+el rpobrama debe terminar. Es decir podremos agregar los datos de la persona pero en cierto momento
+el programa nos preguntará si deseamos continuar."""

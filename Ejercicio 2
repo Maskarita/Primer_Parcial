@@ -1,0 +1,9 @@
+# Actividad 2: 
+""""Escribe un programa que calcule el área y el perímetro de un cuadrado y muestre los resultados (indicando
+cuál es cuál) por pantalla."""
+Lado = int(input("Escribe el valor de uno de los lados del cuadrado: "))
+Area = Lado * Lado
+Perimetro = Lado * 4
+""""Definí las variables e hice las operaciones matemáticas para dar el valor a las mismas"""
+print(F"El valor del área es {Area}cm y el valor del perímetro es {Perimetro}cm")
+""""Aquí utlicé "F-String" que me permite abarcar todo lo que se encientre entre las comillas y llamar a las variables utilizando "{}"""

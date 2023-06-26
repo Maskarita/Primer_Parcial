@@ -1,0 +1,49 @@
+# Activiadad 7:
+""""Del punto anterior, y considerando que durante 12 meses el empleado trabajó las mismas cantidades de
+horas, escribe un programa que calcule el descuento anual a realizarse, considerando:
+a. Si el sueldo anual es mayor a $2.000.000, el descuento es del %5.
+b. Si el sueldo anual esta entre $1.000.000 y $2.000.000, debe aplicarse un descuento del %3.
+c. Si el sueldo anual es menor a $1.000.000, debe aplicarse un descuento del %1.
+d. El programa debe mostrar el salario anual bruto, el monto anual de bonificaciones, el monto anual
+a descontarse y las horas trabajadas en todo el año."""
+print("Sueldo por hora. Más de 120 hs Alto $1500 / Entre 80hs y 120hs Promedio $1300 / Menos de 80hs Bajo $1100")
+""""Agregué este printe para que el usuario sea conciente y vea en pantalla los numeros que debe ingresar
+esto servirá para hacer más preciso los datos ingresados"""
+Horas = int(input("Ingrese las horas de trabajadas por mes: "))
+Sueldo = int(input("Ingrese el pago por hora que recibio cada mes: ")) 
+Anual = Sueldo * Horas * 12
+""""Este es el sueldo anual que el programa tomará en cuenta, el descuento y el bono se agregará dependiendo
+de la condición que deríbe"""
+if Horas > 120 and Anual > 2000000 and Sueldo > 1499 and Sueldo < 1501:
+    """"Hice varios operadores lógicos para que el programa funcione correctamente y agregué unos que van ligados a
+    los pagos por horas que el usuario debe ingresar al inicio del programa"""
+    Bono = Anual + (Anual * 15) // 100
+    Descuento = (Anual * 5) // 100
+    SueldoAnual = Anual + Bono - Descuento
+    Trabajo = Horas * 12
+    print(F"Su sueldo anual alto es de {SueldoAnual} dólares")
+    print(F"Su monto anual de bonificaciónes es de {Bono} dólares")
+    print(F"Su descuento anual es de {Descuento} dólares")
+    print(F"Usted trabajo un total de {Trabajo} horas")
+elif Horas > 80 and Horas < 120 and Anual > 1000000 and Anual < 2000000 and Sueldo > 1299 and Sueldo < 1301:
+     Bono = Anual + (Anual * 18) // 100
+     Descuento = (Anual * 3) // 100
+     SueldoAnual = Anual + Bono - Descuento
+     Trabajo = Horas * 12
+     print(F"Su sueldo anual promedio es de {SueldoAnual} dólares")
+     print(F"Su monto anual de bonificaciónes es de {Bono} dólares")
+     print(F"Su descuento anual es de {Descuento} dólares")
+     print(F"Usted trabajo un total de {Trabajo} horas")
+elif Horas > 0 and Horas < 80 and Anual < 1000000 and Sueldo > 1099 and Sueldo < 1101:
+      Bono = Anual + (Anual * 13) // 100
+      Descuento = (Anual * 1) // 100
+      SueldoAnual = Anual + Bono - Descuento
+      Trabajo = Horas * 12
+      print(F"Su sueldo anual bajo es de {SueldoAnual} dólares")
+      print(F"Su monto anual de bonificaciónes es de {Bono} dólares")
+      print(F"Su descuento anual es de {Descuento} dólares")
+      print(F"Usted trabajo un total de {Trabajo} horas")
+else: 
+     print("Se a producido un error al ingresar los datos, por favor verifíquelos e ingreselos nuevamente")
+     """Si al inico del programa el usuario colóca un número que no sea los mostrados por pantalla, lo va a redirigir a 
+     este condicional"""

@@ -1,0 +1,19 @@
+# Actividad 5:
+""""Escribe un programa que calcule el sueldo de un empleado basándose en la cantidad de horas y muestre
+por pantalla el resultado, considerando lo siguiente:
+a. Si trabajo más de 120hs por mes, la hora tiene un valor de $1500.
+b. Si trabajo entre 80 y 120hs por mes, la hora tiene un valor de $1300.
+c. Si trabajo menos de 80 horas por mes, la hora tiene un valor de $1100."""
+Horas = int(input("Ingrese la cantidad de horas que trabajó: "))
+if Horas > 120:
+    Sueldo = 1500 * Horas
+    print(F"Su sueldo es de {Sueldo} dólares")
+elif Horas > 80 and Horas < 120:
+    Sueldo = 1300 * Horas
+    print(F"Su sueldo es de {Sueldo} dólares")
+else: 
+    Sueldo = 1100 * Horas
+    print(F"Su sueldo es de {Sueldo} dólares")
+    """"Utilice otra vez condicionales para este problemna, multipliqué las horas ingresadas por el usuario por
+    el pago por hora, un operador lógico para la segunda condicion en el cual se debe cumplir la condición 
+    de que el empleado trabajo entre 80 y 120 horas"""
