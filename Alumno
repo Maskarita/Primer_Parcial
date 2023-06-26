@@ -1,0 +1,7 @@
+Nombre = ("Santiago Gabriel Llano")
+Edad = 23
+DNI = ("42.190.474")
+print(Nombre)
+print(Edad, "años")
+print("DNI:", DNI)
+
